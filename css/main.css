@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+}
+
+.sidebar {
+    background: rgb(24, 23, 23);
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+
+}
+
+.heading {
+    background-color: rgb(6, 212, 212);
+    flex: 2;  
+    display: flex;
+    font-family: 'Righteous', cursive;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+span {
+    display: block;  
+}
+.header {
+    padding: 0 1em;
+}
+
+#title {
+    padding-bottom: 1.5em;
+    font-size: 1.1em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(6, 212, 212);
+    border-bottom: 1px solid rgb(161, 152, 152);
+    font-family: 'Paytone One', sans-serif;
+    
+}
+
+nav ul li {
+    padding: 0.9em;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a {
+    color: rgb(6, 212, 212); 
+    font-weight: bold;  
+}
+
+footer a {
+    color: black;
+    font-weight: bold;  
+}
+   
+nav a {
+    text-decoration:underline;
+    padding:0.5em;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight:300;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1em;
+    font-family: 'Josefin Slab', serif; 
+}
+nav a:hover {
+    color: rgb(6, 212, 212);
+}
+
+.para {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 0 2em;
+    font-weight: 600;
+    font-family: 'Josefin Slab', serif;
+}
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255) ;
+    /* margin: 2em 0; */
+    color: rgb(0, 0, 0);
+    padding: 3em 0;
+    justify-content: space-evenly;
+}
+
+.article {
+    flex: 1;
+    margin: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Josefin Slab', serif; 
+    border: 3px solid rgb(6, 212, 212);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: lighter;
+    font-size: 26px;
+    padding-bottom: 1em;
+}
+
+.article p {
+    font-size: 20px;
+}
+
+.wrapper-quotes {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    line-height: 1.6em;
+    font-size: 22px;
+    font-family: 'Josefin Slab', serif; 
+}
+
+footer {
+    background-color: rgb(6, 212, 212);
+    padding: 2em;
+    line-height: 1.6em;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@media only screen and (min-width: 900px) {
+    .container {
+        display: flex;  
+    }
+    #main {
+        background-color: rgb(240, 233, 233);
+        padding: 15px;
+    }
+
+    .sidebar {
+        background: rgb(24, 23, 23);
+        flex: 1;
+        border-top-left-radius: 20px;
+        
+    }
+
+    .bgimg {
+        flex: 2;
+        background: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/st-mother-teresa-greg-joens.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        
+        border-top-right-radius: 20px;
+    }
+    .container div {
+        height: 100vh;
+    }
+    #img-div {
+        display: none;
+    }
+    .head {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(36, 36, 36);
+        font-family: 'Paytone One', sans-serif;
+        letter-spacing: 0.1em;
+    } 
+    .sub {
+        font-size: 0.5em;
+        line-height: 1.5em;
+        letter-spacing: 2px;
+        margin-bottom: 1.5em;
+        font-weight: lighter;
+        color: rgb(255, 255, 255);
+    }
+    .heading {
+        background-color: rgb(6, 212, 212);
+        flex: 2;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
+    }
+    
+
+}
+
+@media only screen and (max-width: 900px) {
+    .heading p {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+     .heading {
+            background-color: rgb(6, 212, 212);
+            flex: 2;  
+            display: flex;
+            flex-direction: column;
+
+        }
+        
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .head {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(36, 36, 36);
+        /* padding: 0.5em 0 0.2em 0; */
+        letter-spacing: 0.5em;
+        padding: 1em;
+    } 
+    .sub {
+        font-size: 0.5em;
+        letter-spacing: 2px;
+        padding-bottom: 1em;
+        font-weight: lighter;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    #title {
+        margin-top: 1em;
+    }
+    nav {
+        margin-bottom: 1em;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .head {
+        font-size: 0.6em;   
+    } 
+}
+
